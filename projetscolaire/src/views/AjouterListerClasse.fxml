@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="520.0" style="-fx-background-color: salmon; -fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GestionClasseController">
+   <children>
+      <TableView id="tvListeClasse" fx:id="tv_classes" layoutX="45.0" layoutY="98.0" prefHeight="211.0" prefWidth="360.0" style="-fx-border-color: black; -fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="tv_id" prefWidth="117.0" style="fx-background-color: black;" text="Id" />
+            <TableColumn fx:id="tv_libelle" prefWidth="240.0" text="Libellé" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="52.0" text="Libellé" />
+      <TextField id="txtLibelle" fx:id="txt_libelle" layoutX="104.0" layoutY="47.0" prefHeight="25.0" prefWidth="109.0" />
+      <Button id="btnAjout" fx:id="btn_ajouter" layoutX="239.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleAjoutClasse" prefHeight="25.0" prefWidth="74.0" text="Ajouter" />
+      <Text layoutX="104.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20; -fx-underline: underline; -fx-font-weight: bold;" text="Ajouter et Lister Classes " textAlignment="CENTER" wrappingWidth="291.5078125">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
